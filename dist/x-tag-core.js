@@ -3985,7 +3985,7 @@ window.CustomElements.addModule(function(scope) {
         js: pre == 'ms' ? pre : pre.charAt(0).toUpperCase() + pre.substring(1)
       };
     })(),
-    matchSelector = Element.prototype.matches || Element.prototype.matchesSelector || Element.prototype[prefix.lowercase + 'MatchesSelector'];
+    matchSelector = Element.prototype.matches || Element.prototype.matchesSelector || Element.prototype.msMatchesSelector || Element.prototype[prefix.lowercase + 'MatchesSelector'];
 
 /*** Functions ***/
 
